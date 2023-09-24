@@ -13,15 +13,19 @@ gridsize{
 
 safe_per_mine = 3;
 
+map[][];
+
 //map into end
 def make_map(){
   loop x times:
+  
     loop y times:
       if random(0,safe_per_mine){
         1
       } else {
         0
       }
+    
 
 }
 
