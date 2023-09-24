@@ -1,0 +1,23 @@
+input = input();
+
+action{
+  type,
+  x,
+  y,
+}
+
+gridsize{
+  x=9,
+  y=9,
+}
+
+def check_input_and_set_action_values(input){ //FIXME: break into smaller pieces
+  if not input.regex(^[a-z][1-{}]:[1-{}]$, gridsize.x , gridsize.y)
+    print ":(";
+    exit();
+  else {
+    action.type  =  input(0)
+    action.x     =  input(1 to ":")
+    action.y     =  input(":" to last_character)
+  }
+}
