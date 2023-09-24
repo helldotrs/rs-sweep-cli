@@ -1,4 +1,4 @@
-input = input();
+input_var
 
 action{
   type,
@@ -11,13 +11,18 @@ gridsize{
   y=9,
 }
 
-def check_input_and_set_action_values(input){ //FIXME: break into smaller pieces
-  if not input.regex(^[a-z][1-{}]:[1-{}]$, gridsize.x , gridsize.y)
-    print ":(";
-    exit();
-  else {
-    action.type  =  input(0)
-    action.x     =  input(1 to ":")
-    action.y     =  input(":" to last_character)
-  }
+def ask_player(){
+  global input_var = input();
+}
+
+def is_input_valid(input_var){ //FIXME: break into smaller pieces
+  if input.regex(^[a-z][1-{}]:[1-{}]$, gridsize.x , gridsize.y)
+    return true;
+  else
+    return false;
+}
+def set_action(input_var){
+    global action.type  =  input(0)
+    global action.x     =  input(1 to ":")
+    global action.y     =  input(":" to last_character)
 }
