@@ -5,10 +5,24 @@ action{
   x,
   y,
 }
-
+//map info
 gridsize{
   x=9,
   y=9,
+}
+
+safe_per_mine = 3;
+
+//map into end
+def make_map(){
+  loop x times:
+    loop y times:
+      if random(0,safe_per_mine){
+        1
+      } else {
+        0
+      }
+
 }
 
 def ask_player(){
