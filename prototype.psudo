@@ -25,6 +25,9 @@ def generate_map(gridsize.x, gridsize.y, safe_per_mine){
               global map[i][j] == 0,0,"h";
   //FIXME: should probably return the map instead but we'll look at that later
 }
+def check_for_neighbors(map){
+  pass
+}
     
     
 //map into end
