@@ -26,3 +26,7 @@ def set_action(input_var){
     global action.x     =  input(1 to ":")
     global action.y     =  input(":" to last_character)
 }
+
+game_loop{
+
+}
