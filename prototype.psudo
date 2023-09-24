@@ -16,7 +16,7 @@ safe_per_mine = 3;
 map[][];
 
 
-def generate_maps(gridsize.x, gridsize.y, safe_per_mine){
+def generate_map(gridsize.x, gridsize.y, safe_per_mine){
     for i in range(gridsize.x):
         for j in range(gridsize.y):
             if (randint(1, safe_per_mine + 1)) 
