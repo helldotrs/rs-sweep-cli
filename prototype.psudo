@@ -20,9 +20,9 @@ def generate_maps(gridsize.x, gridsize.y, safe_per_mine){
     for i in range(gridsize.x):
         for j in range(gridsize.y):
             if (randint(1, safe_per_mine + 1)) 
-              global map[i][j] == 1; 
+              global map[i][j] == 1,0,"h"; //mine or not, neighbors (calculated later), status (h --> hidden) 
             else 
-              global map[i][j] == 0;
+              global map[i][j] == 0,0,"h";
   //FIXME: should probably return the map instead but we'll look at that later
 }
     
