@@ -1,5 +1,8 @@
 
 func get_player_input(){
-
   return a;
+}
+
+loop{
+  
 }
