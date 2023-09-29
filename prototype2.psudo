@@ -3,6 +3,10 @@ func get_player_input(){
   return a;
 }
 
+func setup_game(){
+  pass;
+}
+
 loop{
   
 }
